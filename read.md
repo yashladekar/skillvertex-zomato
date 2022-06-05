@@ -15,3 +15,7 @@ setting up MySQL Database and User
     flush privileges;```
 
 **note: sql fetch data is in json format and does not have frontend** 
+
+** contributors **
+- frontend:Sudheer Bhati
+- backend: Yash Ladekar
