@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+}
+.section-1{
+    
+    position: relative;
+}
+.section-1 > .main-7{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin-top: 250px;
+}
+.section-1 > pre{
+    position:  relative;
+    width: 452px;top: 160px ;
+    height: 124px;
+    left: 680px;
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: capitalize;
+    color: #191919;
+}
+.section-1 > pre >span{
+    color: crimson;
+}
+.main-7 > .content{
+    padding:2rem;
+    background:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.3);
+    border-radius: .5rem;
+    text-align: center;
+    flex:1 1 30rem;
+    position: relative;
+}
+.main-7 > .content > img{
+    height:25rem;
+  object-fit: cover;
+  width:100%; cursor: pointer;
+  border-radius: 50px;
+}
+.main-7 > .content > .price{
+    position: absolute;
+  top:3rem; left:3rem;
+  background-color: crimson;
+  color:#fff;
+  font-size: 2rem;
+  border: 1px solid black;
+  border-radius: 18px;
+}
+.main-7 > .content > h3{
+    color:#333;
+    font-size: 2.5rem;
+    padding-top: 1rem; 
+}
+.main-7 > .content > .stars i{
+    position: relative;
+    color:gold;
+  font-size: 1.7rem;
+  padding:1rem .1rem;
+}
+.main-7 > .content > .btn{
+  flex-direction: row;
+  justify-content: space-evenly;
+  letter-spacing: 2px;
+  font-size: 1.5rem; font-weight: 600;
+    width: 200px;height: 100px;
+    border: 2px solid black;
+    color: white; font-family: 'Sof';
+    border-radius: 18px;
+    background-color: white;
+    transition: ease-out 0.7s;
+    outline: none;z-index: 1;position: relative;
+    cursor: pointer;
+}
+.main-7 > .content > .btn:hover{   
+    cursor: pointer;object-fit: cover;overflow: hidden;
+    color: #000;
+}
+.main-7 > .content > .btn::before{
+    transition: 0.7s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;opacity: 0;content: "";
+    background-color: crimson;
+}
+.main-7 > .content > .btn:hover::before{
+    transition: 0.7s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+.delivery > .heading{
+    position:  relative;
+    width: 452px;top: 70px;
+    height: 124px;
+    left: 800px;
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: capitalize;
+    color: #191919;
+}
+.delivery > .heading span{
+    color: crimson;
+}
+.delivery > .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding:1rem;  
+}
+.delivery > .container > .steps{
+    flex:1 1 25rem;
+    padding:1rem;
+    text-align: center;   
+}
+.delivery > .container > .steps img{
+    border-radius: 50%;
+    border:1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);  
+}
+.delivery > .container > .steps h3{
+    font-size: 2rem;
+  color:#333;
+  
+}
+.review pre{
+    position:  relative;
+    width: 452px;top:50px;
+    height: 124px;
+    left: 610px;
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: capitalize;
+    color: #191919;
+}
+.review > pre span{
+    color: crimson;
+}
+
+.review > .review-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+.review > .review-container > .box-1{
+    text-align: center;
+    padding:2rem;
+    border:1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+    border-radius: .5rem;
+    flex:1 1 30rem;
+    background:#333;
+    margin-top: 6rem;
+}
+.review > .review-container > .box-1 img{
+    height: 12rem;
+  width:12rem;
+  border-radius: 50%;
+  border:1rem solid #fff;
+  margin-top: -8rem;
+  object-fit: cover;
+}
+.review > .review-container > .box-1 h3{
+    font-size: 2.5rem;
+    color:#fff;
+    padding:.5rem 0; 
+}
+.review > .review-container > .box-1 p{
+    font-size: 1.5rem;
+  color:#eee;
+  padding:1rem 0;
+}
+.review > .review-container > .box-1 > .stars i{
+    font-size: 2rem;
+  color:gold;
+  padding:.5rem 0;
+}

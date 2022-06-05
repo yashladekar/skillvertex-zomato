@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food HUT</title>
+    <link rel="icon" type="abc/icon" href="a.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="preLoaderstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="section.css">
+    <link rel="stylesheet" href="section-1.css">
+    <link rel="stylesheet" href="footerstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head> 
+<body onload="myPreLoader();">
+  <div id="loader">
+    <img src="preloader.gif"/>
+  </div>
+  <div class="header">
+    
+    <div class="nav">
+      <div class="title">
+        <h2>FOOD HUT</h2>
+      </div>
+      <ul class="nav-bar">
+        <li><a href="#">Add Restaurant</a></li>
+        <li><a href="#">Today Special Offer</a></li>
+        <li><a href="#">Popular food</a></li>
+      </ul>
+      <div class="log">
+        <a href="login.html">Login</a>
+        <a href="login.html">Sign Up</a>
+      </div>
+    </div>
+    
+  <div class="slide" id="sliders">
+    <script src="script.js"></script>
+    <script>
+        let a=``;var i=1;
+        setInterval(()=>{
+            a=a+`<div class="slideImg" id="imager">
+                    <img src=${data[i-1].src} alt="">
+                </div>
+                <div class="info">
+                    <h1>${data[i-1].name}</h1>
+                    <p>${data[i-1].details}</p>
+                    <div class="search">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                     <input type="text" placeholder="Search for restaurant,cuisine or a dish"> 
+                    </div>
+                    <div class="info_button">
+                        <button type="button">Download App</button>
+                        <button type="button" onClick="myfunc();"><span>ORDER FOOD</span></button>
+                    </div>
+                </div>`
+            document.getElementById("sliders").innerHTML = a;
+            a=``;
+            if(i>data.length-1){i=1}else{i=i+1;}
+        },3000)
+        function myfunc(){
+            window.open("#");
+        }
+    </script>   
+</div>
+</div>
+<script>
+  function myPreLoader(){
+    document.getElementById("loader").style.display = "none";
+  }
+</script>
+<div class="section">
+  <div class="main">
+    <h3>Today <span>Special</span> offer</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Sapiente, enim! Doloribus expedita animi, ullam perferendis a blanditiis eos saepe!.</p>
+  </div>
+  <div class="sec-1">
+    <div class="box">
+      <div class="box_1">
+        <h1>SHASHLIK</h1>
+        <p>
+          Shashlik, or shashlyk, is a dish of skewered and grilled cubes of meat, similar to or synonymous with shish kebab.
+        </p>
+      </div>
+      <img src="7.jpg">
+    </div>
+    <div class="box">
+      <div class="box_1">
+        <h1>FRENCH BISTRO SALAD</h1>
+        <p>
+          A Classic French Salad with an excellent light and clean salad to serve alongside rich foods.
+        </p>
+      </div>
+      <img src="8.jpg">
+    </div>
+    <div class="box">
+      <div class="box_1">
+        <h1>BERRY CHOUX CAKE</h1>
+        <p>
+          A luscious Triple Berry Choux Cake with four layers of choux sandwiched with triple berry cream, iced with vanilla bean.
+        </p>
+      </div>
+      <img src="9.jpg">
+    </div>
+    <div class="box">
+      <div class="box_1">
+        <h1>PANCAKES</h1>
+        <p>
+          A pancake is a flat cake, often thin and round, prepared from a starch-based batter. 
+        </p>
+      </div>
+      <img src="10.jpg">
+    </div>
+  </div>
+  <div class="sec-2">
+    <div class="main-1">
+      <h2>We are more than <br> <span> multiple </span> service</h2>
+      <img src="11.jpg">
+    </div>
+  </div>  
+  <div class="sec-3">
+    <div class="main-2">
+      <h1>ONLINE ORDER</h1>
+      <img src="c.png">
+    </div>
+    <div class="main-3">
+      <h2>24/7 SERVICE</h2>
+      <img src="d.png">
+    </div>
+    <div class="main-4">
+      <h3>30-MINUTE DELIVERY</h3>
+      <img src="e.png">
+    </div>
+    <div class="main-5">
+      <h4>PRE-BOOKING</h4>
+      <img src="f.png">
+    </div> 
+  </div>   
+<button class="button"><a href="about-us.html">ABOUT US</a></button>
+</div> 
+<div class="section-1">
+  <pre><span>MENU</span> THAT ALWAYS MAKE YOU 
+                   FALL  IN <span>LOVE</span></pre>
+  <div class="main-7">
+    <div class="content">
+      <span class="price"> $100-$500</span>
+      <img src="s1.jpg">
+      <h3>FRENCH CUISINE</h3>
+      <button class="btn"><a href="#">EXPLORE MORE</a></button>
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+    </div>
+    <div class="content">
+      <span class="price"> $90-$700</span>
+      <img src="s2.jpg">
+      <h3>INDIAN CUISINE</h3>
+      <button class="btn"><a href="#">EXPLORE MORE</a></button>
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+    </div>  
+    <div class="content">
+      <span class="price"> $150-$450</span>
+      <img src="s3.jpg">
+      <h3>JAPANESE CUISINE</h3>
+      <button class="btn"><a href="#">EXPLORE MORE</a></button>
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+    </div>  
+    <div class="content">
+      <span class="price"> $200-$800</span>
+      <img src="s4.jpg">
+      <h3>ITALIAN CUISINE</h3>
+      <button class="btn"><a href="#">EXPLORE MORE</a></button>
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+    </div>
+    <div class="content">
+      <span class="price"> $180-$600</span>
+      <img src="s5.jpg">
+      <h3>MEXICAN CUISINE</h3>
+      <button class="btn"><a href="#">EXPLORE MORE</a></button>
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+    </div>    
+    <div class="content">
+      <span class="price"> $50-$550</span>
+      <img src="s4.jpg">
+      <h3>CHINESE CUISINE</h3>
+      <button class="btn"><a href="#">EXPLORE MORE</a></button>
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+    </div>        
+  </div>
+  <div class="delivery">
+    <h1 class="heading">HOW IT <span>WOKS</span></h1>
+    <div class="container">
+        <div class="steps">
+            <img src="d1.jpg" alt="">
+            <h3>CHOOSE YOUR FAVOURITE FOOD</h3>
+        </div>
+        <div class="steps">
+            <img src="d2.jpg" alt="">
+            <h3>FAST DELIVERY WITHIN 30-MINUTE</h3>
+        </div>
+        <div class="steps">
+            <img src="d3.jpg" alt="">
+            <h3>EASY PAYMENT METHODS</h3>
+        </div>
+        <div class="steps">
+            <img src="d4.jpg" alt="">
+            <h3>ENJOY YOUR FOOD</h3>
+        </div>    
+    </div>
+  <div class="review">
+    <pre> OUR CUSTOMERS <span>REVIEWS</span></pre>
+    <div class="review-container">
+      <div class="box-1">
+          <img src="f1.jpg" alt="">
+          <h3>JUSTIN SHAIFER</h3>
+          <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+      </div>
+      <div class="box-1">
+          <img src="f2.jpg" alt="">
+          <h3>HEITOR VERDI</h3>
+          <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+      </div>
+      <div class="box-1">
+          <img src="f3.jpg" alt="">
+          <h3>DAVID GARRISON</h3>
+          <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+      </div>
+  </div>
+</div>
+</div> 
+<footer class="footer">
+  <div class="container bottom_border">
+      <div class="row">
+          <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+              <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+              <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+              <p><i class="fa fa-phone"></i>  +91-9999878398  </p>
+              <p><i class="fa fa fa-envelope"></i> info@example.com  </p>
+          </div>
+          <div class=" col-sm-4 col-md  col-6 col">
+              <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+              <ul class="footer_ul_amrc">
+                  <li><a href="">Image Rectoucing</a></li>
+                  <li><a href="">Clipping Path</a></li>
+                  <li><a href="">Hollow Man Montage</a></li>
+                  <li><a href="">Ebay & Amazon</a></li>
+                  <li><a href="">Hair Masking/Clipping</a></li>
+                  <li><a href="">Image Cropping</a></li>
+              </ul>
+          </div>
+          <div class=" col-sm-4 col-md  col-6 col">
+              <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+              <ul class="footer_ul_amrc">
+                  <li><a href="">Remove Background</a></li>
+                  <li><a href="">Shadows & Mirror Reflection</a></li>
+                  <li><a href="">Logo Design</a></li>
+                  <li><a href="">Vectorization</a></li>
+                  <li><a href="">Hair Masking/Clipping</a></li>
+                  <li><a href="">Image Cropping</a></li>
+              </ul>
+          </div>
+          <div class=" col-sm-4 col-md  col-12 col">
+              <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+              <ul class="footer_ul2_amrc">
+                  <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">www.google.com</a></p></li>
+                  <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">www.google.com</a></p></li>
+                  <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">www.google.com</a></p></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+          <div class="container">
+              <ul class="foote_bottom_ul_amrc">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Pricing</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Contact</a></li>
+              </ul>
+              <p class="text-center">Copyright @2022 | Designed With by <a href="index.html">SWAY</a></p>
+              
+              <ul class="social_footer_ul">
+                  <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+              </ul>
+          </div>
+          <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+           <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</footer>
+
+
+</body>
+</html>
