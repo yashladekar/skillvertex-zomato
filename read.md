@@ -18,7 +18,7 @@ setting up MySQL Database and User
 
 
 ## file directory 
- 
+ <pre>
 .
 └── DATABASE/
     ├── config/
@@ -73,7 +73,7 @@ setting up MySQL Database and User
     ├── package.json
     ├── read.md
     └── server.js
-
+</pre>
 ** contributors **
 - frontend:Sudheer Bhati
 - backend: Yash Ladekar
