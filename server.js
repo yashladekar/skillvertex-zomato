@@ -16,9 +16,9 @@ app.use("/", express.static(path.join(__dirname, "public")));
 
 
 
-app.get('/root',(req,res)=>{
-    res.json({message:"hello form api"})
-})
+// app.get('/root',(req,res)=>{
+//     res.json({message:"hello form api"})
+// })
 
 
 
