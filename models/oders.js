@@ -14,10 +14,14 @@ const Order = sequelize.define(
       type: Sequelize.STRING,
       allowNull: false,
     },
-    //   type:{
-    //       type:Sequelize.STRING,
-    //       allowNull:false
-    //   }
+    type: {
+      type: Sequelize.STRING,
+      allowNull: false,
+    },
+    price:{
+      type:Sequelize.FLOAT,
+      allowNull:true,
+    }
   },
   {
     timestamps: false,
