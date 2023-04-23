@@ -75,5 +75,4 @@ setting up MySQL Database and User
     └── server.js
 </pre>
 ** contributors **
-- frontend:Sudheer Bhati
-- backend: Yash Ladekar
+- Yash Ladekar
